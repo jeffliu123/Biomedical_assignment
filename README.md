@@ -39,10 +39,10 @@ $ pip install -r requirements.txt
 ```
 ### Usage 
 ```bash
-$ python3 ecg_ppg.py
-$ python3 cnn_train.py
+$ python3 assignment1.py
+$ python3 assignment2.py
 $ python3 cnn_predict.py
-$ python3 change_model.py
+$ python3 assignment4.py
 ```
 ### Slide link(NYCU)
 https://docs.google.com/presentation/d/1T-oer6ydYy4zR05BcprUr-sJW5H7oNyNwlYxdRj5aRs/mobilepresent?slide=id.g260a8d390d5_0_373
