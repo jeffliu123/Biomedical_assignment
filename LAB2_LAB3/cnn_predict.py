@@ -1,3 +1,11 @@
+'''
+Author: jeffliu123 jeffliuhappy0228@gmail.com
+Date: 2023-12-09 00:58:35
+LastEditors: jeffliu123 jeffliuhappy0228@gmail.com
+LastEditTime: 2023-12-09 14:22:52
+FilePath: /Biomedical_assignment/LAB2_LAB3/cnn_predict.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 import tensorflow as tf
 import wfdb
 import numpy as np
@@ -41,17 +49,11 @@ def Preparation_data():
     label[see_data_num] = np.delete(label[see_data_num], delete_point)
     print('new label Quantity', len(label[see_data_num]))
     print('new label_point Quantity', len(label_point[see_data_num]))
-    #===================================================================find not normal
-    # for i in range(len(label[see_data_num])):
-    #     if (label[see_data_num][i] != 'N') :
-    #         print('===',i)
-    #===================================================================
     see_data_label_point = label_point[see_data_num]
     i = 3
     j = 230
     model_input = dataSet[see_data_num][see_data_label_point[j]-125 : see_data_label_point[j]+125]
     model_input = model_input.reshape(-1,250,1)
-    # print('==++',model_input.shape)
     ground_truth_normal = label[0][i]
     ground_truth_not_normal = label[0][j]
     print('GT_normal: ',ground_truth_normal)
