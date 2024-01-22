@@ -71,7 +71,7 @@ if __name__ == '__main__':
     print(model_input)
     predictions = loaded_model.predict(model_input)
     print('-----',predictions)
-    if predictions > 0.1:
+    if predictions[0][0] < predictions[0][1]:
         print('Not normal caution caution caution!!!!!')
-    else:
+    elif predictions[0][0] > predictions[0][1]:
         print('Normal heart rate signal')
