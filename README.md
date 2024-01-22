@@ -35,7 +35,10 @@
 <img src="https://drive.google.com/u/2/uc?id=1aBxOBEFG0VTbf5kTwyeSXopGHOxQ39M7&export=download" width="50%">
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-
+### Download representative dataset
+```bash
+$ sh download.sh
+```
 ### Create a new environment
 ```bash
 $ conda create --name DL python=3.9
