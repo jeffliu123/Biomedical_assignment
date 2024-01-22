@@ -17,6 +17,8 @@
 ### LAB2 
 #### 1.Fill some layers of the model on your own
 #### 2.Draw the training and validation loss
+#### 3.Save testx.npy and testy.npy(prepare for Lab4)​
+​
 ![](https://drive.google.com/u/2/uc?id=1TLUkFnfZUyaOOd_AMm_YAN70kCz2YZxu&export=download)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -34,10 +36,6 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-### Download representative dataset
-```bash
-$ sh download.sh
-```
 ### Create a new environment
 ```bash
 $ conda create --name DL python=3.9
